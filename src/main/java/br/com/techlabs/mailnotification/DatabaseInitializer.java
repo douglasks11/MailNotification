@@ -61,6 +61,8 @@ public class DatabaseInitializer implements CommandLineRunner {
 
 		templateRepository.save(templateDouglas);
 
+		
+		
 		victor.setTemplates(Arrays.asList(templateVictor));
 
 		usuarioRepository.save(victor);
