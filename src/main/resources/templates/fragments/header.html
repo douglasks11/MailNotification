@@ -6,14 +6,36 @@
 
     <title>Spring Boot Thymeleaf Hello World Example</title>
 
-    <link rel="stylesheet" th:href="@{/css/main.css}"/>
-
 </head>
 
-<body>
-	
-</body>
+<body th:fragment="header">
+	 <!-- Nav Bar -->
+    <div class="navbar-fixed">
+    <nav class="black lighten-1" role="navigation">
+      <div class="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo logo">
+          <i class="material-icons">code</i>Mail Notification</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a th:href="@{/}">Home</a></li>
+          <li>
+            <a th:href="@{/upload}" class="white black-text waves-effect waves-light btn"
+              >Enviar Arquivo</a
+            >
+          </li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service </a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+  </div>
+	</body>
 
 </html>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -19,6 +19,6 @@ public class TestRestController {
 
 	@GetMapping
 	public ResponseEntity<String> testaServicoRest(){
-		return ResponseEntity.ok().body("<html> <h1> Welcome to Mail-Notification! </h1> </html>");
+		return ResponseEntity.ok().body("<html> <h1> OXE! </h1> </html>");
 	}
 }
